@@ -745,3 +745,164 @@ img.portfolio-media {
 .portfolio-section video {
   object-position: center center !important;
 }
+
+/* === AMIIRA LUXURY 3D ENHANCEMENTS (AUTO-GENERATED) === */
+:root {
+    --amiira-pink-light: #fff5f7;
+    --amiira-pink-base: #f9d8e0;
+    --amiira-pink-accent: #e58a9e;
+    --amiira-pink-dark: #b8546b;
+    --amiira-rose-gold: #cfa5a7;
+    --amiira-gold-accent: #dfb279;
+    --amiira-shadow-soft-3d: 0 16px 36px -10px rgba(184, 84, 107, 0.22),
+                             0 6px 16px -4px rgba(70, 20, 35, 0.08),
+                             inset 0 1px 1px rgba(255, 255, 255, 0.9);
+    --amiira-shadow-hover-3d: 0 24px 50px -12px rgba(184, 84, 107, 0.35),
+                              0 12px 24px -6px rgba(70, 20, 35, 0.12),
+                              inset 0 1px 2px rgba(255, 255, 255, 1);
+    --amiira-card-border: 1px solid rgba(249, 216, 224, 0.65);
+    --amiira-transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Hero Section & Profile Image 3D Styling */
+.hero-image-wrapper,
+.hero .hero-image,
+.hero-img-container {
+    position: relative;
+    display: inline-block;
+    perspective: 1200px;
+    margin: 1.5rem auto;
+    z-index: 2;
+}
+
+.hero-image-wrapper::before,
+.hero-img-container::before {
+    content: "";
+    position: absolute;
+    inset: -12px;
+    border-radius: 36px;
+    background: radial-gradient(circle at 30% 30%, rgba(229, 138, 158, 0.35), rgba(255, 245, 247, 0.05) 70%);
+    filter: blur(14px);
+    z-index: -1;
+    transition: var(--amiira-transition-smooth);
+}
+
+.hero-profile-img,
+.hero-img,
+.hero img.profile-img,
+.hero-image img {
+    width: 100% !important;
+    max-width: 480px !important;
+    min-width: 320px !important;
+    height: auto !important;
+    aspect-ratio: 4 / 5;
+    object-fit: cover !important;
+    object-position: center 20%;
+    border-radius: 28px !important;
+    border: 3px solid rgba(255, 255, 255, 0.85) !important;
+    box-shadow: var(--amiira-shadow-soft-3d) !important;
+    transform: perspective(1000px) rotateY(-2deg) rotateX(2deg);
+    transition: var(--amiira-transition-smooth) !important;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-image-wrapper:hover .hero-profile-img,
+.hero-profile-img:hover,
+.hero-image img:hover {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg) translateY(-8px) scale(1.02) !important;
+    box-shadow: var(--amiira-shadow-hover-3d) !important;
+    border-color: #ffffff !important;
+}
+
+/* Service Cards 3D Elevated Aesthetic */
+.service-card,
+.services-card,
+.services .card,
+.service-item {
+    background: #ffffff !important;
+    border-radius: 22px !important;
+    border: var(--amiira-card-border) !important;
+    box-shadow: var(--amiira-shadow-soft-3d) !important;
+    transition: var(--amiira-transition-smooth) !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative;
+    transform: translateZ(0);
+}
+
+.service-card:hover,
+.services-card:hover,
+.services .card:hover,
+.service-item:hover {
+    transform: translateY(-10px) translateZ(10px) !important;
+    box-shadow: var(--amiira-shadow-hover-3d) !important;
+    border-color: rgba(229, 138, 158, 0.5) !important;
+}
+
+/* Service Card Image Holder */
+.service-card-media {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: var(--amiira-pink-light);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.service-card-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 60%, rgba(184, 84, 107, 0.15) 100%);
+    pointer-events: none;
+}
+
+.service-card-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    display: block !important;
+}
+
+.service-card:hover .service-card-img,
+.services-card:hover .service-card-img,
+.services .card:hover .service-card-img {
+    transform: scale(1.08) !important;
+}
+
+/* Card Content Spacing */
+.service-card-body,
+.service-card .card-content,
+.service-item .service-content {
+    padding: 1.6rem 1.4rem;
+    flex-grow: 1;
+}
+
+.service-card h3,
+.services-card h3,
+.service-item h3 {
+    color: #4a2832;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+/* Responsive tuning */
+@media (max-width: 768px) {
+    .hero-profile-img,
+    .hero-img,
+    .hero-image img {
+        max-width: 90% !important;
+        min-width: 260px !important;
+        transform: none !important;
+    }
+    
+    .service-card-media {
+        height: 200px;
+    }
+}
+/* === END AMIIRA LUXURY 3D ENHANCEMENTS === */

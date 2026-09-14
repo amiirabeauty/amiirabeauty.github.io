@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amiira Beauty</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero-frame img,
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .service-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
@@ -46,10 +64,7 @@
       </div>
 
       <div class="hero-frame">
-        <div class="media-placeholder">
-          <span>AMIIRA BEAUTY</span>
-          <small>Featured Beauty Work</small>
-        </div>
+        <img src="assets/profile/amiira-profile.png" alt="Amiira Beauty" class="hero-image hero-profile-img" />
       </div>
     </section>
 
@@ -64,7 +79,7 @@
 
         <article class="service-card">
           <div class="service-image makeup-image">
-            <span>MAKEUP</span>
+            <div class="service-card-media"><img src="assets/services/makeup.jpg" alt="Makeup Services" class="service-card-img" /></div>
           </div>
 
           <div class="service-info">
@@ -79,7 +94,7 @@
 
         <article class="service-card">
           <div class="service-image hair-image">
-            <span>HAIR STYLING</span>
+            <div class="service-card-media"><img src="assets/services/hair-styling.jpg" alt="Hair Services" class="service-card-img" /></div>
           </div>
 
           <div class="service-info">
@@ -94,7 +109,7 @@
 
         <article class="service-card">
           <div class="service-image henna-image">
-            <span>HENNA</span>
+            <div class="service-card-media"><img src="assets/services/henna.jpg" alt="Henna Services" class="service-card-img" /></div>
           </div>
 
           <div class="service-info">
