@@ -648,3 +648,75 @@
     installFlagPicker();
   }
 })();
+
+/* ===== Mobile language picker visibility fix ===== */
+(() => {
+  function fixMobileLanguagePicker() {
+    const picker = document.getElementById("amiiraFlagPicker");
+    const header = document.querySelector(".topbar");
+
+    if (!picker || !header) return;
+
+    if (window.innerWidth <= 700) {
+      if (picker.parentElement !== header) {
+        header.appendChild(picker);
+      }
+
+      picker.classList.add("mobile-language-picker");
+    } else {
+      picker.classList.remove("mobile-language-picker");
+    }
+  }
+
+  const mobileStyle = document.createElement("style");
+  mobileStyle.textContent = `
+    @media (max-width: 700px) {
+      .topbar {
+        position: relative !important;
+      }
+
+      #amiiraFlagPicker.mobile-language-picker {
+        display: inline-flex !important;
+        position: absolute !important;
+        top: 50% !important;
+        right: 18px !important;
+        transform: translateY(-50%) !important;
+        z-index: 10000 !important;
+      }
+
+      html[dir="rtl"] #amiiraFlagPicker.mobile-language-picker {
+        right: auto !important;
+        left: 18px !important;
+      }
+
+      #amiiraFlagPicker .flag-current {
+        padding: 6px 9px !important;
+        min-width: auto !important;
+      }
+
+      #amiiraFlagPicker .flag-svg {
+        width: 25px !important;
+        height: 17px !important;
+      }
+
+      #amiiraFlagPicker .flag-menu {
+        position: absolute !important;
+        top: calc(100% + 8px) !important;
+        right: 0 !important;
+        z-index: 10001 !important;
+      }
+    }
+  `;
+
+  document.head.appendChild(mobileStyle);
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(fixMobileLanguagePicker, 100);
+    });
+  } else {
+    setTimeout(fixMobileLanguagePicker, 100);
+  }
+
+  window.addEventListener("resize", fixMobileLanguagePicker);
+})();
