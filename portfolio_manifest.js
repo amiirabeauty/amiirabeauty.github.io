@@ -22,13 +22,6 @@ window.AMIIRA_PORTFOLIO = {
       "title": "Makeup"
     },
     {
-      "src": "assets/ai/makeup/makeup_ai_01.jpg",
-      "type": "image",
-      "source": "ai",
-      "label": "AI Inspiration",
-      "title": "Makeup"
-    },
-    {
       "src": "assets/selected/makeup/7524772278429601031.mp4",
       "type": "video",
       "source": "real",
@@ -40,6 +33,13 @@ window.AMIIRA_PORTFOLIO = {
       "type": "video",
       "source": "real",
       "label": "Amiira Beauty Work",
+      "title": "Makeup"
+    },
+    {
+      "src": "assets/ai/makeup/makeup_ai_01.jpg",
+      "type": "image",
+      "source": "ai",
+      "label": "AI Inspiration",
       "title": "Makeup"
     },
     {
@@ -201,13 +201,6 @@ window.AMIIRA_PORTFOLIO = {
       "title": "Henna"
     },
     {
-      "src": "assets/ai/henna/henna_ai_01.jpg",
-      "type": "image",
-      "source": "ai",
-      "label": "AI Inspiration",
-      "title": "Henna"
-    },
-    {
       "src": "assets/selected/henna/7273562019922578693.mp4",
       "type": "video",
       "source": "real",
@@ -226,13 +219,6 @@ window.AMIIRA_PORTFOLIO = {
       "type": "video",
       "source": "real",
       "label": "Amiira Beauty Work",
-      "title": "Henna"
-    },
-    {
-      "src": "assets/ai/henna/henna_ai_02.jpg",
-      "type": "image",
-      "source": "ai",
-      "label": "AI Inspiration",
       "title": "Henna"
     },
     {
@@ -257,13 +243,6 @@ window.AMIIRA_PORTFOLIO = {
       "title": "Henna"
     },
     {
-      "src": "assets/ai/henna/henna_ai_03.jpg",
-      "type": "image",
-      "source": "ai",
-      "label": "AI Inspiration",
-      "title": "Henna"
-    },
-    {
       "src": "assets/selected/henna/7291040676114910470.mp4",
       "type": "video",
       "source": "real",
@@ -282,13 +261,6 @@ window.AMIIRA_PORTFOLIO = {
       "type": "video",
       "source": "real",
       "label": "Amiira Beauty Work",
-      "title": "Henna"
-    },
-    {
-      "src": "assets/ai/henna/henna_ai_04.jpg",
-      "type": "image",
-      "source": "ai",
-      "label": "AI Inspiration",
       "title": "Henna"
     },
     {
@@ -313,13 +285,6 @@ window.AMIIRA_PORTFOLIO = {
       "title": "Henna"
     },
     {
-      "src": "assets/ai/henna/henna_ai_05.jpg",
-      "type": "image",
-      "source": "ai",
-      "label": "AI Inspiration",
-      "title": "Henna"
-    },
-    {
       "src": "assets/selected/henna/7294668625913466118.mp4",
       "type": "video",
       "source": "real",
@@ -338,13 +303,6 @@ window.AMIIRA_PORTFOLIO = {
       "type": "video",
       "source": "real",
       "label": "Amiira Beauty Work",
-      "title": "Henna"
-    },
-    {
-      "src": "assets/ai/henna/henna_ai_06.jpg",
-      "type": "image",
-      "source": "ai",
-      "label": "AI Inspiration",
       "title": "Henna"
     },
     {
@@ -369,13 +327,6 @@ window.AMIIRA_PORTFOLIO = {
       "title": "Henna"
     },
     {
-      "src": "assets/ai/henna/henna_ai_07.jpg",
-      "type": "image",
-      "source": "ai",
-      "label": "AI Inspiration",
-      "title": "Henna"
-    },
-    {
       "src": "assets/selected/henna/7297334298846170373.mp4",
       "type": "video",
       "source": "real",
@@ -394,13 +345,6 @@ window.AMIIRA_PORTFOLIO = {
       "type": "video",
       "source": "real",
       "label": "Amiira Beauty Work",
-      "title": "Henna"
-    },
-    {
-      "src": "assets/ai/henna/henna_ai_08.jpg",
-      "type": "image",
-      "source": "ai",
-      "label": "AI Inspiration",
       "title": "Henna"
     },
     {
@@ -425,13 +369,6 @@ window.AMIIRA_PORTFOLIO = {
       "title": "Henna"
     },
     {
-      "src": "assets/ai/henna/henna_ai_09.jpg",
-      "type": "image",
-      "source": "ai",
-      "label": "AI Inspiration",
-      "title": "Henna"
-    },
-    {
       "src": "assets/selected/henna/7306102708795133190.mp4",
       "type": "video",
       "source": "real",
@@ -450,13 +387,6 @@ window.AMIIRA_PORTFOLIO = {
       "type": "video",
       "source": "real",
       "label": "Amiira Beauty Work",
-      "title": "Henna"
-    },
-    {
-      "src": "assets/ai/henna/henna_ai_10.jpg",
-      "type": "image",
-      "source": "ai",
-      "label": "AI Inspiration",
       "title": "Henna"
     },
     {
@@ -751,6 +681,76 @@ window.AMIIRA_PORTFOLIO = {
       "type": "video",
       "source": "real",
       "label": "Amiira Beauty Work",
+      "title": "Henna"
+    },
+    {
+      "src": "assets/ai/henna/henna_ai_01.jpg",
+      "type": "image",
+      "source": "ai",
+      "label": "AI Inspiration",
+      "title": "Henna"
+    },
+    {
+      "src": "assets/ai/henna/henna_ai_02.jpg",
+      "type": "image",
+      "source": "ai",
+      "label": "AI Inspiration",
+      "title": "Henna"
+    },
+    {
+      "src": "assets/ai/henna/henna_ai_03.jpg",
+      "type": "image",
+      "source": "ai",
+      "label": "AI Inspiration",
+      "title": "Henna"
+    },
+    {
+      "src": "assets/ai/henna/henna_ai_04.jpg",
+      "type": "image",
+      "source": "ai",
+      "label": "AI Inspiration",
+      "title": "Henna"
+    },
+    {
+      "src": "assets/ai/henna/henna_ai_05.jpg",
+      "type": "image",
+      "source": "ai",
+      "label": "AI Inspiration",
+      "title": "Henna"
+    },
+    {
+      "src": "assets/ai/henna/henna_ai_06.jpg",
+      "type": "image",
+      "source": "ai",
+      "label": "AI Inspiration",
+      "title": "Henna"
+    },
+    {
+      "src": "assets/ai/henna/henna_ai_07.jpg",
+      "type": "image",
+      "source": "ai",
+      "label": "AI Inspiration",
+      "title": "Henna"
+    },
+    {
+      "src": "assets/ai/henna/henna_ai_08.jpg",
+      "type": "image",
+      "source": "ai",
+      "label": "AI Inspiration",
+      "title": "Henna"
+    },
+    {
+      "src": "assets/ai/henna/henna_ai_09.jpg",
+      "type": "image",
+      "source": "ai",
+      "label": "AI Inspiration",
+      "title": "Henna"
+    },
+    {
+      "src": "assets/ai/henna/henna_ai_10.jpg",
+      "type": "image",
+      "source": "ai",
+      "label": "AI Inspiration",
       "title": "Henna"
     }
   ]

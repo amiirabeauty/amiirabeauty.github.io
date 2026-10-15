@@ -1,226 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amiira Beauty</title>
-  <link rel="stylesheet" href="style.css?v=20260914-4" />
-  <style>
-    .hero-frame img,
-    .hero-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .service-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amiira Beauty · Makeup, Hair &amp; Henna</title>
+  <meta name="description" content="Amiira Beauty — makeup, hair styling and henna crafted with care, elegance and a feminine touch. Book on WhatsApp." />
+  <meta name="theme-color" content="#241019" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Amiira Beauty · Makeup, Hair & Henna" />
+  <meta property="og:description" content="Makeup, hair styling and henna crafted with care, elegance and a feminine touch." />
+  <meta property="og:image" content="https://amiirabeauty.github.io/art/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="art/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="canonical" href="https://amiirabeauty.github.io/" />
+  <meta property="og:url" content="https://amiirabeauty.github.io/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,500&family=Jost:wght@300;400;500;600&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=20261015" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BeautySalon","name":"Amiira Beauty","telephone":"+905525774487","openingHours":"Mo-Sa 08:00-20:00","sameAs":["https://www.tiktok.com/@haliimahenna"],"description":"Makeup, hair styling and henna."}
+  </script>
 </head>
-
 <body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="topbar">
-    <div class="brand">AMIIRA BEAUTY</div>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Portfolio</a>
-      <a href="#contact">Contact</a>
-    <div class="language-switcher"><select id="languageSelect" aria-label="Language"><option value="en">EN</option><option value="so">SO</option><option value="ar">AR</option><option value="tr">TR</option></select></div></nav>
+    <a class="brand" href="#home" aria-label="Amiira Beauty">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M20 6c4 5 4 9 0 14-4-5-4-9 0-14zm0 28c-4-5-4-9 0-14 4 5 4 9 0 14zM6 20c5-4 9-4 14 0-5 4-9 4-14 0zm28 0c-5 4-9 4-14 0 5-4 9-4 14 0z" fill="currentColor" opacity=".9"/></svg>
+      <span>Amiira <em>Beauty</em></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#work" data-i18n="nav.work">Work</a>
+      <a href="#book" data-i18n="nav.book">Book</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="langs" role="group" data-i18n-attr="aria-label:lang" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="so" aria-pressed="false">SO</button>
+      <button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+      <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">TR</button>
+    </div>
   </header>
 
-  <main>
-
+  <main id="main">
     <section id="home" class="hero">
-      <div class="hero-decor flower flower-left">&#10048;</div>
-      <div class="hero-decor flower flower-right">&#10048;</div>
-
-      <div class="hero-content">
-        <p class="eyebrow">BEAUTY &#8226; ELEGANCE &#8226; ART</p>
-
-        <h1>
-          Let Your Beauty
-          <span>Tell Your Story</span>
-        </h1>
-
-        <p class="hero-text">
-          Makeup, Hair Styling & Henna crafted with care,
-          elegance and a feminine touch.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#gallery" class="btn primary">View Portfolio &#10024;</a>
-          <a href="#contact" class="btn secondary">Contact on WhatsApp &#9825;</a>
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Makeup · Hair · Henna</p>
+        <h1><span data-i18n="hero.t1">Every story</span> <em data-i18n="hero.t2">begins with a hand</em></h1>
+        <p class="lede" data-i18n="hero.text">Makeup, hair styling and henna crafted with care, elegance and a feminine touch.</p>
+        <div class="cta">
+          <a class="btn solid" href="#work" data-i18n="hero.cta1">See the work</a>
+          <a class="btn line" href="https://wa.me/905525774487" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta2">Book on WhatsApp</a>
         </div>
+        <dl class="stats">
+          <div><dt data-i18n="stat.real">real works shown</dt><dd id="statReal">—</dd></div>
+          <div><dt data-i18n="stat.henna">henna videos</dt><dd id="statHenna">—</dd></div>
+          <div><dt data-i18n="stat.hours">Mon – Sat</dt><dd>08–20</dd></div>
+        </dl>
       </div>
 
-      <div class="hero-frame">
-        <img src="assets/profile/amiira-profile.png" alt="Amiira Beauty" class="hero-image hero-profile-img" />
-      </div>
-    </section>
-
-    <section id="services" class="services-section">
-
-      <div class="section-heading">
-        <p>OUR BEAUTY SERVICES</p>
-        <h2>Beauty made with love &#10024;</h2>
-      </div>
-
-      <div class="service-grid">
-
-        <article class="service-card">
-          <div class="service-image makeup-image">
-            <div class="service-card-media"><img src="assets/services/makeup.jpg" alt="Makeup Services" class="service-card-img" /></div>
-          </div>
-
-          <div class="service-info">
-            <span class="sparkle">&#10022;</span>
-            <h3>Makeup</h3>
-            <p>
-              Elegant, soft and glamorous makeup looks
-              for your special moments.
-            </p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <div class="service-image hair-image">
-            <div class="service-card-media"><img src="assets/services/hair-styling.jpg" alt="Hair Services" class="service-card-img" /></div>
-          </div>
-
-          <div class="service-info">
-            <span class="sparkle">&#9825;</span>
-            <h3>Hair Styling</h3>
-            <p>
-              Beautiful hairstyles created to complete
-              your perfect look.
-            </p>
-          </div>
-        </article>
-
-        <article class="service-card">
-          <div class="service-image henna-image">
-            <div class="service-card-media"><img src="assets/services/henna.jpg" alt="Henna Services" class="service-card-img" /></div>
-          </div>
-
-          <div class="service-info">
-            <span class="sparkle">&#10022;</span>
-            <h3>Henna</h3>
-            <p>
-              Detailed and elegant henna designs created
-              with an artistic feminine touch.
-            </p>
-          </div>
-        </article>
-
+      <div class="hero-art" aria-hidden="false">
+        <img class="mandala" src="art/mandala.svg" alt="" />
+        <figure class="arch">
+          <img src="art/hero.jpg" alt="Amiira Beauty" fetchpriority="high" />
+        </figure>
+        <video class="bubble b1" muted loop playsinline preload="none" data-asset-video="henna" aria-hidden="true"></video>
+        <video class="bubble b2" muted loop playsinline preload="none" data-asset-video="makeup" aria-hidden="true"></video>
       </div>
     </section>
 
-    <section id="gallery" class="portfolio-section">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track"><span data-i18n="marquee">Makeup · Hair Styling · Henna ·</span><span data-i18n="marquee">Makeup · Hair Styling · Henna ·</span><span data-i18n="marquee">Makeup · Hair Styling · Henna ·</span><span data-i18n="marquee">Makeup · Hair Styling · Henna ·</span></div>
+    </div>
 
-      <div class="section-heading">
-        <p>AMIIRA BEAUTY LOOKBOOK</p>
-        <h2>Our Work &#9825;</h2>
+    <section id="services" class="section services">
+      <header class="sec-head reveal">
+        <p class="eyebrow" data-i18n="svc.eyebrow">What we do</p>
+        <h2 data-i18n="svc.title">Beauty, made by hand</h2>
+      </header>
+      <div class="svc-grid">
+        <article class="svc reveal">
+          <div class="svc-img"><img data-asset="assets/services/makeup.jpg" alt="" loading="lazy" /></div>
+          <span class="num">01</span>
+          <h3 data-i18n="svc.makeup">Makeup</h3>
+          <p data-i18n="svc.makeup.d">Elegant, soft and glamorous makeup looks for your special moments.</p>
+          <a href="#work" class="svc-link" data-filter="makeup"><span data-i18n="svc.see">See the work</span> <i aria-hidden="true">→</i></a>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-img"><img data-asset="assets/services/hair-styling.jpg" alt="" loading="lazy" /></div>
+          <span class="num">02</span>
+          <h3 data-i18n="svc.hair">Hair Styling</h3>
+          <p data-i18n="svc.hair.d">Beautiful hairstyles created to complete your perfect look.</p>
+          <a href="#work" class="svc-link" data-filter="hair"><span data-i18n="svc.see">See the work</span> <i aria-hidden="true">→</i></a>
+        </article>
+        <article class="svc reveal">
+          <div class="svc-img"><img data-asset="assets/services/henna.jpg" alt="" loading="lazy" /></div>
+          <span class="num">03</span>
+          <h3 data-i18n="svc.henna">Henna</h3>
+          <p data-i18n="svc.henna.d">Detailed and elegant henna designs created with an artistic feminine touch.</p>
+          <a href="#work" class="svc-link" data-filter="henna"><span data-i18n="svc.see">See the work</span> <i aria-hidden="true">→</i></a>
+        </article>
       </div>
+    </section>
 
-      <div class="book">
+    <section id="how" class="section how">
+      <header class="sec-head reveal">
+        <p class="eyebrow" data-i18n="how.eyebrow">How it works</p>
+        <h2 data-i18n="how.title">Three simple steps</h2>
+      </header>
+      <ol class="steps">
+        <li class="step reveal"><span class="step-n" aria-hidden="true">1</span><h3 data-i18n="how.1.t"></h3><p data-i18n="how.1.d"></p></li>
+        <li class="step reveal"><span class="step-n" aria-hidden="true">2</span><h3 data-i18n="how.2.t"></h3><p data-i18n="how.2.d"></p></li>
+        <li class="step reveal"><span class="step-n" aria-hidden="true">3</span><h3 data-i18n="how.3.t"></h3><p data-i18n="how.3.d"></p></li>
+      </ol>
+    </section>
 
-        <button class="book-arrow left" id="prevPage">&#8249;</button>
+    <section id="work" class="section work">
+      <header class="sec-head reveal">
+        <p class="eyebrow" data-i18n="work.eyebrow">Lookbook</p>
+        <h2 data-i18n="work.title">Our work</h2>
+      </header>
 
-        <div class="book-page">
-          <div class="page-media">
-            <span>Portfolio Photo / Video</span>
-          </div>
-
-          <div class="page-caption">
-            <span class="page-category">MAKEUP</span>
-            <h3>Soft Glam Beauty</h3>
-            <p>
-              Real beauty work by Amiira Beauty.
-            </p>
-          </div>
+      <div class="toolbar">
+        <div class="tabs" role="tablist" aria-label="Filter">
+          <button type="button" class="tab" role="tab" data-filter="all" aria-selected="true" data-i18n="work.all">All</button>
+          <button type="button" class="tab" role="tab" data-filter="makeup" aria-selected="false" data-i18n="work.makeup">Makeup</button>
+          <button type="button" class="tab" role="tab" data-filter="hair" aria-selected="false" data-i18n="work.hair">Hair</button>
+          <button type="button" class="tab" role="tab" data-filter="henna" aria-selected="false" data-i18n="work.henna">Henna</button>
         </div>
-
-        <button class="book-arrow right" id="nextPage">&#8250;</button>
-
+        <label class="switch"><input type="checkbox" id="realOnly" checked /><span class="track" aria-hidden="true"></span><span data-i18n="work.realOnly">Real work only</span></label>
+        <p class="count" id="workCount" aria-live="polite"></p>
       </div>
 
-      <div class="page-dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-
+      <div class="grid" id="grid"></div>
+      <div class="more"><button type="button" class="btn line" id="moreBtn" data-i18n="work.more">Show more</button></div>
+      <p class="fine" data-i18n="work.note">Items marked “AI inspiration” are images created to complement Amiira Beauty’s real portfolio.</p>
     </section>
 
-    <section id="contact" class="contact-section">
-
-      <div class="contact-card">
-
+    <section id="book" class="section book">
+      <div class="book-wrap">
         <div>
-          <p class="eyebrow">BOOK YOUR BEAUTY APPOINTMENT</p>
-          <h2>We would love to hear from you &#9825;</h2>
-          <p>
-            Contact Amiira Beauty directly on WhatsApp
-            for appointments and availability.
-          </p>
+          <p class="eyebrow" data-i18n="book.eyebrow">Book your appointment</p>
+          <h2 data-i18n="book.title">Tell us what you have in mind</h2>
+          <p class="lede" data-i18n="book.text">Fill this in and WhatsApp opens with your message ready. Nothing is stored on this site.</p>
         </div>
-
-        <div class="contact-details">
-
-          <div class="detail">
-            <span>&#9825;</span>
-            <div>
-              <strong>WhatsApp</strong>
-              <p id="whatsappText">+90 552 577 44 87</p>
-            </div>
-          </div>
-
-          <div class="detail">
-            <span>&#10022;</span>
-            <div>
-              <strong>Working Days</strong>
-              <p id="workingDays">Monday &ndash; Saturday</p>
-            </div>
-          </div>
-
-          <div class="detail">
-            <span>&#9734;</span>
-            <div>
-              <strong>Working Hours</strong>
-              <p id="workingHours">08:00 &ndash; 20:00<br>Sunday: Closed</p>
-            </div>
-          </div>
-
-        </div>
-
-        <a href="https://wa.me/905525774487" id="whatsappButton" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
-          Message Amiira Beauty on WhatsApp &#9825;
-        </a>
-
+        <form id="bookForm" class="form" autocomplete="off">
+          <label><span data-i18n="book.name">Your name</span><input name="name" type="text" maxlength="60" /></label>
+          <label><span data-i18n="book.service">Service</span>
+            <select name="service">
+              <option value="makeup" data-i18n="svc.makeup">Makeup</option>
+              <option value="hair" data-i18n="svc.hair">Hair Styling</option>
+              <option value="henna" data-i18n="svc.henna">Henna</option>
+            </select>
+          </label>
+          <label><span data-i18n="book.date">Preferred date</span><input name="date" type="date" /></label>
+          <label class="wide"><span data-i18n="book.notes">Notes (occasion, style…)</span><textarea name="notes" rows="3" maxlength="300"></textarea></label>
+          <button class="btn solid wide" type="submit" data-i18n="book.send">Send on WhatsApp</button>
+        </form>
       </div>
     </section>
 
+    <section class="follow">
+      <div class="follow-card reveal">
+        <p class="eyebrow" data-i18n="follow.eyebrow">Follow along</p>
+        <h2 data-i18n="follow.title">More henna and makeup on TikTok</h2>
+        <a class="btn solid" href="https://www.tiktok.com/@haliimahenna" target="_blank" rel="noopener noreferrer"><span data-i18n="follow.btn">Open TikTok</span> · @haliimahenna</a>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <header class="sec-head reveal">
+        <p class="eyebrow" data-i18n="faq.eyebrow">Good to know</p>
+        <h2 data-i18n="faq.title">Questions, answered</h2>
+      </header>
+      <div class="faq-list">
+        <details class="reveal"><summary data-i18n="faq.q1"></summary><p data-i18n="faq.a1"></p></details>
+        <details class="reveal"><summary data-i18n="faq.q2"></summary><p data-i18n="faq.a2"></p></details>
+        <details class="reveal"><summary data-i18n="faq.q3"></summary><p data-i18n="faq.a3"></p></details>
+        <details class="reveal"><summary data-i18n="faq.q4"></summary><p data-i18n="faq.a4"></p></details>
+        <details class="reveal"><summary data-i18n="faq.q5"></summary><p data-i18n="faq.a5"></p></details>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <header class="sec-head reveal">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+        <h2 data-i18n="contact.title">We would love to hear from you</h2>
+        <p class="lede" data-i18n="contact.text">Contact Amiira Beauty directly on WhatsApp for appointments and availability.</p>
+      </header>
+      <ul class="facts reveal">
+        <li><b data-i18n="contact.wa">WhatsApp</b><span dir="ltr">+90 552 577 44 87</span></li>
+        <li><b data-i18n="contact.days">Working days</b><span data-i18n="contact.daysV">Monday – Saturday</span></li>
+        <li><b data-i18n="contact.hours">Working hours</b><span data-i18n="contact.hoursV">08:00 – 20:00 · Sunday closed</span></li>
+      </ul>
+      <a class="btn solid big" href="https://wa.me/905525774487" target="_blank" rel="noopener noreferrer" data-i18n="contact.btn">Message Amiira Beauty on WhatsApp</a>
+    </section>
   </main>
 
-  <footer>
-    <div class="footer-brand">AMIIRA BEAUTY</div>
-    <p>Makeup &#8226; Hair Styling &#8226; Henna</p>
-    <p class="footer-love">Made with &#9825; and beauty &#10024;</p>
+  <footer class="footer">
+    <div class="footer-brand">Amiira <em>Beauty</em></div>
+    <p data-i18n="foot">Makeup · Hair Styling · Henna</p>
+    <p class="muted" data-i18n="foot2">Made with love and beauty</p>
   </footer>
 
-  <script src="portfolio_manifest.js?v=20260914-4"></script>
-  <script src="script.js?v=20260914-4"></script>
-<script src="i18n.js?v=20260914-4"></script></body>
+  <a class="wa-float" href="https://wa.me/905525774487" target="_blank" rel="noopener noreferrer" data-i18n="float">Book on WhatsApp</a>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Gallery">
+    <button type="button" class="lb-btn lb-close" id="lbClose" data-i18n-attr="aria-label:lb.close" aria-label="Close">×</button>
+    <button type="button" class="lb-btn lb-prev" id="lbPrev" data-i18n-attr="aria-label:lb.prev" aria-label="Previous">‹</button>
+    <div class="lb-stage" id="lbStage"></div>
+    <button type="button" class="lb-btn lb-next" id="lbNext" data-i18n-attr="aria-label:lb.next" aria-label="Next">›</button>
+    <p class="lb-cap" id="lbCap"></p>
+  </dialog>
+
+  <script>
+    /* Where the photos/videos live. For the live site, change this to "" (empty) once assets sit next to this file. */
+    window.ASSET_BASE = "";
+  </script>
+  <script src="portfolio_manifest.js?v=20261015"></script>
+  <script src="i18n.js?v=20261015"></script>
+  <script src="app.js?v=20261015"></script>
+  <script src="reveal.js?v=20261015"></script>
+</body>
 </html>
-
-

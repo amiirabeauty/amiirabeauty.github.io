@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amiirabeauty.github.io/sitemap.xml
