@@ -12,7 +12,8 @@
   /* ---------- data ---------- */
   const cats = ["henna", "makeup", "hair"];
   const items = [];
-  cats.forEach((c) => (RAW[c] || []).forEach((it) => items.push({ ...it, cat: c, url: BASE + it.src })));
+  const posterOf = (src) => BASE + "assets/posters/" + src.split("/").pop().replace(/\.[^.]+$/, "") + ".jpg";
+  cats.forEach((c) => (RAW[c] || []).forEach((it) => items.push({ ...it, cat: c, url: BASE + it.src, poster: it.type === "video" ? posterOf(it.src) : "" })));
   const isReal = (i) => i.source === "real";
 
   function interleave(list) {
@@ -33,7 +34,13 @@
     entries.forEach((e) => {
       const v = e.target;
       if (e.isIntersecting) {
-        if (!v.src && v.dataset.src) v.src = v.dataset.src;
+        if (!v.getAttribute("src") && v.dataset.src) {
+          v.muted = true; v.defaultMuted = true; v.preload = "metadata";
+          // phones only paint a frame once data is loaded: nudge to the poster frame
+          v.addEventListener("loadedmetadata", () => { try { if (v.currentTime < 0.1) v.currentTime = 0.5; } catch { /* ignore */ } }, { once: true });
+          v.src = v.dataset.src.split("#")[0];
+          v.load();
+        }
         if (v.dataset.auto === "1" && !reduce) v.play().catch(() => {});
       } else if (v.dataset.auto === "1") v.pause();
     });
@@ -44,6 +51,7 @@
     const it = items.find((i) => i.cat === cat && i.type === "video" && isReal(i));
     if (!v || !it) { v && v.remove(); return; }
     v.dataset.src = it.url + "#t=0.5";
+    v.poster = it.poster;
     v.dataset.auto = "1";
     lazyVideo.observe(v);
   });
@@ -69,8 +77,9 @@
     let media;
     if (it.type === "video") {
       media = document.createElement("video");
-      media.muted = true; media.loop = true; media.playsInline = true; media.preload = "none";
+      media.muted = true; media.loop = true; media.playsInline = true; media.preload = "metadata";
       media.dataset.src = it.url + "#t=0.5";
+      media.poster = it.poster;
       media.setAttribute("aria-hidden", "true");
       lazyVideo.observe(media);
       if (canHover && !reduce) {
@@ -123,7 +132,7 @@
     const it = visible[cur];
     stage.replaceChildren();
     let m;
-    if (it.type === "video") { m = document.createElement("video"); m.src = it.url; m.controls = true; m.autoplay = true; m.loop = true; m.playsInline = true; }
+    if (it.type === "video") { m = document.createElement("video"); m.poster = it.poster; m.src = it.url; m.controls = true; m.autoplay = true; m.loop = true; m.playsInline = true; }
     else { m = document.createElement("img"); m.src = it.url; m.alt = ""; }
     stage.append(m);
     const label = t(it.cat === "hair" ? "work.hair" : it.cat === "henna" ? "work.henna" : "work.makeup");
